@@ -1,9 +1,10 @@
-import { FirstComponent } from './first-component/first-component';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
-import { AppComponent } from './app.component';
+import { ModuloFuncionalidadeCursosModule } from './modulo-funcionalidade-cursos/modulo-funcionalidade-cursos.module';
+import { FirstComponent } from './first-component/first-component';
 import { FirstComponentNgComponent } from './first-component-ng/first-component-ng.component';
+import { AppComponent } from './app.component';
 
 @NgModule({
   declarations: [
@@ -12,7 +13,8 @@ import { FirstComponentNgComponent } from './first-component-ng/first-component-
     FirstComponentNgComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    ModuloFuncionalidadeCursosModule
   ],
   providers: [],
   bootstrap: [AppComponent]
