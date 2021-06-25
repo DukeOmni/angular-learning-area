@@ -1,0 +1,16 @@
+<mat-form-field appearance="fill">
+    <mat-label>Event Biding</mat-label>
+    <input matInput (keyup)="onKeyUp($event)" 
+                    (keyup.enter)="saveInput($event.target.value)">
+  </mat-form-field >
+  <p>{{inputValue}}</p>
+  <p>{{inputBuffer}}</p>
+
+  <br>
+  <br>
+  <br>
+  <span (mouseover)="mouseEvent($event)"
+        (mouseout)="mouseEvent($event)"
+        [class.highlights]="isMouseOver">
+      Hover over me senpai
+  </span>
