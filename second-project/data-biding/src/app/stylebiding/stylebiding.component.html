@@ -1,0 +1,18 @@
+<article>
+    <h3>
+        Class and Style biding
+    </h3>
+
+    <h4>Basic mat-select</h4>
+    <mat-form-field appearance="fill">
+      <mat-label>Button color</mat-label>
+      <mat-select [(value)]="color">
+        <mat-option value="primary">Primary</mat-option>
+        <mat-option value="warn">Warn</mat-option>
+      </mat-select>
+    </mat-form-field>
+
+    <br>
+    <br> 
+    <button mat-raised-button [color]="color">Can't decide</button>
+</article>
