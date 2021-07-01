@@ -10,20 +10,26 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatButtonModule } from '@angular/material/button';
 import {MatInputModule} from '@angular/material/input';
 import { EventbidingComponent } from './eventbiding/eventbiding.component';
+import { TwoAwayDatabidingComponent } from './two-away-databiding/two-away-databiding.component';
+import { FormsModule } from '@angular/forms';
+import { InputPropertiesComponent } from './input-properties/input-properties.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     DatabidingComponent,
     StylebidingComponent,
-    EventbidingComponent
+    EventbidingComponent,
+    TwoAwayDatabidingComponent,
+    InputPropertiesComponent
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
     MatButtonModule,
     MatSelectModule,
-    MatInputModule
+    MatInputModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
