@@ -7,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DatabidingComponent implements OnInit {
   url:String ='http://google.com'
+  name:String='Gaijin-san'
   constructor() { }
 
   ngOnInit(): void {
