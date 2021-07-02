@@ -13,6 +13,8 @@ import { EventbidingComponent } from './eventbiding/eventbiding.component';
 import { TwoAwayDatabidingComponent } from './two-away-databiding/two-away-databiding.component';
 import { FormsModule } from '@angular/forms';
 import { InputPropertiesComponent } from './input-properties/input-properties.component';
+import { OutputPropertiesComponent } from './output-properties/output-properties.component';
+import {MatIconModule} from '@angular/material/icon';
 
 @NgModule({
   declarations: [
@@ -21,7 +23,8 @@ import { InputPropertiesComponent } from './input-properties/input-properties.co
     StylebidingComponent,
     EventbidingComponent,
     TwoAwayDatabidingComponent,
-    InputPropertiesComponent
+    InputPropertiesComponent,
+    OutputPropertiesComponent
   ],
   imports: [
     BrowserModule,
@@ -29,7 +32,8 @@ import { InputPropertiesComponent } from './input-properties/input-properties.co
     MatButtonModule,
     MatSelectModule,
     MatInputModule,
-    FormsModule
+    FormsModule,
+    MatIconModule
   ],
   providers: [],
   bootstrap: [AppComponent]
