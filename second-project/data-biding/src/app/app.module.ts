@@ -15,6 +15,7 @@ import { FormsModule } from '@angular/forms';
 import { InputPropertiesComponent } from './input-properties/input-properties.component';
 import { OutputPropertiesComponent } from './output-properties/output-properties.component';
 import {MatIconModule} from '@angular/material/icon';
+import { LifeCycleComponent } from './life-cycle/life-cycle.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import {MatIconModule} from '@angular/material/icon';
     EventbidingComponent,
     TwoAwayDatabidingComponent,
     InputPropertiesComponent,
-    OutputPropertiesComponent
+    OutputPropertiesComponent,
+    LifeCycleComponent
   ],
   imports: [
     BrowserModule,

@@ -15,3 +15,9 @@
 <br>
 <app-output-properties [countMe]="10"
                         (mudarValor)="onEmmit($event)"></app-output-properties>
+
+<app-life-cycle *ngIf="alive" [valorInicial]="lifeCycleValue"></app-life-cycle>
+<button mat-raised-button color="primary" (click)="changeValor()">Click me To Increment</button>
+<br>
+<button mat-raised-button color="warn" (click)="kill()">Click me To kill</button>
+<br>
