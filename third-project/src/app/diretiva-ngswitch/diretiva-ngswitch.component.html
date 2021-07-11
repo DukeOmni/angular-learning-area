@@ -1,1 +1,8 @@
-<p>diretiva-ngswitch works!</p>
+<section>Ng switch section</section>
+<h1>Ng Switch</h1>
+<div [ngSwitch]="profileConfig" *ngFor="let item of confidentialInfo"> {{item.nome}} Info
+  <h3 *ngSwitchCase="'master'">adress: {{item.adress}}</h3>
+  <h3 *ngSwitchCase="'doctor'"> cpf: {{item.cpf}}</h3>
+  <h3 *ngSwitchDefault>name: {{item.nome}}</h3>
+</div>
+
