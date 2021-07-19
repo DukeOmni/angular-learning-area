@@ -1,0 +1,28 @@
+<h1>Ng class?</h1>
+<button mat-raised-button *ngIf="isFavored" (click)="changeFavoredStatus()">
+    <mat-icon>star</mat-icon>
+</button>
+<button mat-raised-button *ngIf="!isFavored" (click)="changeFavoredStatus()">
+    <mat-icon >star_outline</mat-icon>
+</button>
+
+<h2>Segunda maneira de Fazer</h2>
+
+<button mat-raised-button (click)="changeFavoredStatus()">
+    <mat-icon>{{isFavored?'star':'star_outline'}}</mat-icon>
+</button>
+<p>Essas duas maneiras de fazer usam ngIf e interpolation</p>
+<p>O exemplo dado era para usar ngClass, contudo pela documentação</p>
+<p> material icons usam <a href="https://alistapart.com/article/the-era-of-symbol-fonts/"> ligatures</a></p>
+
+<h2>Terceira maneira de fazer</h2>
+<ul>
+    <li *ngFor="let item of courses" [ngClass]="{city: item.favored}">{{item.course}}
+        <button mat-raised-button *ngIf="item.favored" (click)="changeFavoredStatus()">
+            <mat-icon >star</mat-icon>
+        </button>
+        <button mat-raised-button *ngIf="!item.favored" (click)="changeFavoredStatus()">
+            <mat-icon >star_outline</mat-icon>
+        </button>
+    </li>
+</ul>
