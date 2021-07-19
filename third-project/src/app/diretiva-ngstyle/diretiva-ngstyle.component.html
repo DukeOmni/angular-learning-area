@@ -1,1 +1,4 @@
-<p>diretiva-ngstyle works!</p>
+<button [ngStyle]="{'color':(ativo?'black':'white'),
+                     'backgroundColor':(ativo?'gray':'blue')           
+                    }" 
+        mat-raised-button (click)="toggleNightMode($event)">Click me to toggle night mode</button>
