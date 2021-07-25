@@ -16,6 +16,7 @@ import { ElvisOperatorComponent } from './elvis-operator/elvis-operator.componen
 import { NgContentComponent } from './ng-content/ng-content.component';
 import { CustomDirectivesComponent } from './custom-directives/custom-directives.component';
 import { YelowBackgroundDirective } from './diretives/first-diretive/yelow-background.directive';
+import { HighlightMouseDirective } from './diretives/second/highlight-mouse.directive';
 
 
 @NgModule({
@@ -28,7 +29,8 @@ import { YelowBackgroundDirective } from './diretives/first-diretive/yelow-backg
     ElvisOperatorComponent,
     NgContentComponent,
     CustomDirectivesComponent,
-    YelowBackgroundDirective
+    YelowBackgroundDirective,
+    HighlightMouseDirective
   ],
   imports: [
     BrowserModule,
