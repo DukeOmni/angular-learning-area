@@ -14,6 +14,8 @@ import { DiretivaAtributoComponent } from './diretiva-atributo/diretiva-atributo
 import { DiretivaNgstyleComponent } from './diretiva-ngstyle/diretiva-ngstyle.component';
 import { ElvisOperatorComponent } from './elvis-operator/elvis-operator.component';
 import { NgContentComponent } from './ng-content/ng-content.component';
+import { CustomDirectivesComponent } from './custom-directives/custom-directives.component';
+import { YelowBackgroundDirective } from './diretives/first-diretive/yelow-background.directive';
 
 
 @NgModule({
@@ -24,7 +26,9 @@ import { NgContentComponent } from './ng-content/ng-content.component';
     DiretivaAtributoComponent,
     DiretivaNgstyleComponent,
     ElvisOperatorComponent,
-    NgContentComponent
+    NgContentComponent,
+    CustomDirectivesComponent,
+    YelowBackgroundDirective
   ],
   imports: [
     BrowserModule,
