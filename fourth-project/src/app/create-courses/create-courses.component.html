@@ -1,0 +1,10 @@
+<mat-form-field class="example-full-width" appearance="fill">
+    <mat-label>Add a new Course</mat-label>
+    <input matInput #inputCourse>
+</mat-form-field>
+<button mat-raised-button color="primary" (click)="newCourse(inputCourse.value)">Add</button>
+
+<p>List of courses Testing singleton</p>
+<mat-list role="List of courses">
+    <mat-list-item *ngFor="let course of courses">{{course}}</mat-list-item>
+</mat-list>
