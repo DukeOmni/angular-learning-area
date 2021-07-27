@@ -4,7 +4,10 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-create-courses',
   templateUrl: './create-courses.component.html',
-  styleUrls: ['./create-courses.component.css']
+  styleUrls: ['./create-courses.component.css'],
+  providers:[
+    CoursesService
+  ]
 })
 export class CreateCoursesComponent implements OnInit {
 

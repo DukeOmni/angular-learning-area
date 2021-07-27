@@ -26,7 +26,7 @@ import { CreateCoursesComponent } from './create-courses/create-courses.componen
     MatFormFieldModule
   ],
   providers: [
-    CoursesService
+    // CoursesService
   ],
   bootstrap: [AppComponent]
 })
