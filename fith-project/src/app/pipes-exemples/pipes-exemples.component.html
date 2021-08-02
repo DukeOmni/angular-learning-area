@@ -8,17 +8,39 @@
 
 <br>
 <br>
-<mat-form-field class="example-full-width" appearance="fill">
-    <mat-label>Add Courses</mat-label>
-    <input matInput #newCourse> 
-</mat-form-field>
-<button mat-raised-button color='primary' (click)="addCourse(newCourse.value)">add course</button>
+<div>
+    <mat-form-field class="example-full-width" appearance="fill">
+        <mat-label>Add Courses</mat-label>
+        <input matInput #newCourse> 
+    </mat-form-field>
+    <button mat-raised-button color='primary' (click)="addCourse(newCourse.value)">add course</button>
 
-<mat-form-field class="example-full-width" appearance="fill">
-    <mat-label>Filter</mat-label>
-    <input matInput [(ngModel)]="filter"> 
-</mat-form-field>
+</div>
+<div>
+    <mat-form-field class="example-full-width" appearance="fill">
+        <mat-label>Filter</mat-label>
+        <input matInput [(ngModel)]="filter"> 
+    </mat-form-field>
+</div>
 
-<ul>
-    <li *ngFor="let item of courses | arrayFilter:filter">{{item}}</li>
-</ul>
+<div>
+    <h3>Pipe Puro</h3>
+    <ul>
+        <li *ngFor="let item of courses | arrayFilter:filter">{{item}}</li>
+    </ul>
+
+</div>
+<div>
+    <h3>Pipe Impuro</h3>
+    <ul>
+        <li *ngFor="let item of courses | filtroArrayImpure:filter">{{item}}</li>
+    </ul>
+
+</div>
+<div>
+    <h3>Maneira correta de filtrar</h3>
+    <ul>
+        <li *ngFor="let item of courses | filtroArrayImpure:filter">{{item}}</li>
+    </ul>
+
+</div>

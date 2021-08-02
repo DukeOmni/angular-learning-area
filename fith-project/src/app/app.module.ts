@@ -12,6 +12,7 @@ import { ArrayFilterPipe } from './pipes-exemples/array-filter.pipe';
 import {MatInputModule} from '@angular/material/input';
 import {MatButtonModule} from '@angular/material/button';
 import { FormsModule } from '@angular/forms';
+import { FiltroArrayImpurePipe } from './pipes-exemples/filtro-array-impure.pipe';
 
 registerLocaleData(localePt,'pt-BR');
 
@@ -20,7 +21,8 @@ registerLocaleData(localePt,'pt-BR');
     AppComponent,
     PipesExemplesComponent,
     MyPipePipe,
-    ArrayFilterPipe
+    ArrayFilterPipe,
+    FiltroArrayImpurePipe
   ],
   imports: [
     BrowserModule,
