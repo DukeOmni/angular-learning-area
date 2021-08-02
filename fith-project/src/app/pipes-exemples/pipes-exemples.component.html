@@ -40,7 +40,7 @@
 <div>
     <h3>Maneira correta de filtrar</h3>
     <ul>
-        <li *ngFor="let item of courses | filtroArrayImpure:filter">{{item}}</li>
+        <li *ngFor="let item of filterCourses()">{{item}}</li>
     </ul>
 
 </div>

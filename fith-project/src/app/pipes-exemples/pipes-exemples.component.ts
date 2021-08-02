@@ -26,6 +26,23 @@ export class PipesExemplesComponent implements OnInit {
   addCourse(newCourse:String){
     this.courses.push(newCourse);
   }
+  filterCourses(){
+    if (this.courses.length === 0 || this.filter === undefined
+      || this.filter.trim()==''){
+      
+      return this.courses;
+    }else{
+      return this.courses.filter(v=>{
+        if(v.toLocaleLowerCase().indexOf(this.filter.toLowerCase()) >=0){
+           return true;
+
+        }else{
+          return false;
+        }
+      })
+    }
+  }
+
   constructor() { }
 
   ngOnInit(): void {
