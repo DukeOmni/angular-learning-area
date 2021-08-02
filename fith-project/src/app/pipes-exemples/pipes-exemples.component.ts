@@ -16,7 +16,16 @@ export class PipesExemplesComponent implements OnInit {
     nota:5.5847,
     saldo:65.78
   }
+  courses:String[]=[
+    "Angular",
+    "Java"
+  ]
+  
+  filter:String;
 
+  addCourse(newCourse:String){
+    this.courses.push(newCourse);
+  }
   constructor() { }
 
   ngOnInit(): void {

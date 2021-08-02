@@ -3,5 +3,22 @@
 <p>{{info.cpf}}</p>
 <p>{{info.endereco | uppercase | camelCase }}</p>
 <p>{{info.nota | number:'1.0-2'}}</p>
-<p>{{info.saldo | currency:'BRL'}}</p>
-<p>{{info.dataNasc | date : 'dd/MM/yyyy'}}</p>
+<p>{{info.saldo | currency}}</p>
+<p>{{info.dataNasc | date }}</p>
+
+<br>
+<br>
+<mat-form-field class="example-full-width" appearance="fill">
+    <mat-label>Add Courses</mat-label>
+    <input matInput #newCourse> 
+</mat-form-field>
+<button mat-raised-button color='primary' (click)="addCourse(newCourse.value)">add course</button>
+
+<mat-form-field class="example-full-width" appearance="fill">
+    <mat-label>Filter</mat-label>
+    <input matInput [(ngModel)]="filter"> 
+</mat-form-field>
+
+<ul>
+    <li *ngFor="let item of courses | arrayFilter:filter">{{item}}</li>
+</ul>
