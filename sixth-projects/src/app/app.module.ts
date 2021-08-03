@@ -1,14 +1,16 @@
-import { routing } from './app.routing';
+import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
+import { routing } from './app.routing';
 import { AppComponent } from './app.component';
-import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 import { CoursesComponent } from './courses/courses.component';
 
 import {MatIconModule} from '@angular/material/icon';
 import { HomeComponent } from './home/home.component';
 import { LoginComponent } from './login/login.component';
+import {MatToolbarModule} from '@angular/material/toolbar';
+import {MatButtonModule} from '@angular/material/button';
 
 
 @NgModule({
@@ -22,6 +24,8 @@ import { LoginComponent } from './login/login.component';
     BrowserModule,
     NoopAnimationsModule,
     MatIconModule,
+    MatToolbarModule,
+    MatButtonModule,
     routing
   ],
   providers: [],
