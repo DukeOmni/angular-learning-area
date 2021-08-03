@@ -1,6 +1,9 @@
 .navbar{
     justify-content: space-between;
 }
+.active{
+    background-color: #2d3b86;
+}
 span{
     padding-right: 1rem;
 }
