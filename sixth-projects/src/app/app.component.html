@@ -3,7 +3,13 @@
     <div>
         <button mat-flat-button color="primary" routerLink="/login" routerLinkActive="active" >Login</button >
         <button mat-flat-button color="primary" routerLink="/cursos" routerLinkActive="active">Courses</button >
+        <button mat-flat-button color="primary" [routerLink]="['/curso',inputId.value]" routerLinkActive="active">Courses Detail</button >
     </div>
 </mat-toolbar>
-
+    <div class="container">
+        <mat-form-field class="example-full-width" appearance="fill">
+            <mat-label>Escreva o Id</mat-label>
+            <input matInput #inputId>
+          </mat-form-field> 
+    </div>
 <router-outlet></router-outlet>

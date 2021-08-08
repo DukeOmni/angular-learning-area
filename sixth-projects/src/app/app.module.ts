@@ -11,6 +11,8 @@ import { HomeComponent } from './home/home.component';
 import { LoginComponent } from './login/login.component';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatButtonModule} from '@angular/material/button';
+import {MatInputModule} from '@angular/material/input';
+import { CoursesDetalComponent } from './courses-detal/courses-detal.component';
 
 
 @NgModule({
@@ -18,7 +20,8 @@ import {MatButtonModule} from '@angular/material/button';
     AppComponent,
     CoursesComponent,
     HomeComponent,
-    LoginComponent
+    LoginComponent,
+    CoursesDetalComponent
   ],
   imports: [
     BrowserModule,
@@ -26,6 +29,7 @@ import {MatButtonModule} from '@angular/material/button';
     MatIconModule,
     MatToolbarModule,
     MatButtonModule,
+    MatInputModule,
     routing
   ],
   providers: [],
