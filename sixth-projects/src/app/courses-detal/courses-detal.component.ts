@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute} from '@angular/router';
+import { Subscription } from 'rxjs';
 
 @Component({
   selector: 'app-courses-detal',
@@ -8,13 +9,20 @@ import { ActivatedRoute} from '@angular/router';
 })
 export class CoursesDetalComponent implements OnInit {
   id:String;
+  sub:Subscription;
 
   constructor(private routes:ActivatedRoute) { 
     console.log(this.routes);
-    this.id=this.routes.snapshot.params['id'];
+
   }
 
   ngOnInit(): void {
+    this.sub=this.routes.params.subscribe((params:any)=>{
+      this.id=params['id'];
+    });
+  }
+  ngOnDestroy(){
+    this.sub.unsubscribe();
   }
 
 }
