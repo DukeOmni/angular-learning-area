@@ -13,7 +13,9 @@ import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatButtonModule} from '@angular/material/button';
 import {MatInputModule} from '@angular/material/input';
 import { CoursesDetalComponent } from './courses-detal/courses-detal.component';
-
+import { CoursesService } from './courses/courses.service';
+import {MatListModule} from '@angular/material/list';
+import { CourseNotFoundComponent } from './course-not-found/course-not-found.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +23,8 @@ import { CoursesDetalComponent } from './courses-detal/courses-detal.component';
     CoursesComponent,
     HomeComponent,
     LoginComponent,
-    CoursesDetalComponent
+    CoursesDetalComponent,
+    CourseNotFoundComponent
   ],
   imports: [
     BrowserModule,
@@ -30,9 +33,12 @@ import { CoursesDetalComponent } from './courses-detal/courses-detal.component';
     MatToolbarModule,
     MatButtonModule,
     MatInputModule,
+    MatListModule,
     routing
   ],
-  providers: [],
+  providers: [
+    CoursesService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

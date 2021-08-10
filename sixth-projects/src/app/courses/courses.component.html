@@ -1,2 +1,4 @@
-<p>courses works!</p>
-<mat-icon>home</mat-icon>
+<mat-nav-list>
+    <button mat-list-item *ngFor="let course of courses"
+    [routerLink]="['/curso',course.id]" routerLinkActive="active" > {{course.nome}} </button>
+ </mat-nav-list>
