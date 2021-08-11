@@ -2,8 +2,8 @@
     <button mat-flat-button color="primary" routerLink=""  >Rotas angular</button >
     <div>
         <button mat-flat-button color="primary" routerLink="/login" routerLinkActive="active" >Login</button >
-        <button mat-flat-button color="primary" routerLink="/cursos" routerLinkActive="active">Courses</button >
-        <button mat-flat-button color="primary" [routerLink]="['/curso',inputId.value]" routerLinkActive="active">Courses Detail</button >
+        <button mat-flat-button color="primary" routerLink="/cursos" routerLinkActive="active" [queryParams]="{pagina:1}">Courses</button >
+        <button mat-flat-button color="primary" [routerLink]="['/curso',inputId.value]"  routerLinkActive="active">Courses Detail</button >
     </div>
 </mat-toolbar>
     <div class="container">
