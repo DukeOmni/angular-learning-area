@@ -2,7 +2,6 @@ import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
-import { routing } from './app.routing';
 import { AppComponent } from './app.component';
 import { CoursesComponent } from './courses/courses.component';
 
@@ -16,6 +15,7 @@ import { CoursesDetalComponent } from './courses-detal/courses-detal.component';
 import { CoursesService } from './courses/courses.service';
 import {MatListModule} from '@angular/material/list';
 import { CourseNotFoundComponent } from './course-not-found/course-not-found.component';
+import { AppRoutingModule } from './app.routing.module';
 
 @NgModule({
   declarations: [
@@ -34,7 +34,7 @@ import { CourseNotFoundComponent } from './course-not-found/course-not-found.com
     MatButtonModule,
     MatInputModule,
     MatListModule,
-    routing
+    AppRoutingModule
   ],
   providers: [
     CoursesService
