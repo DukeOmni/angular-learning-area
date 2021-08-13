@@ -12,7 +12,7 @@ import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatButtonModule} from '@angular/material/button';
 import {MatInputModule} from '@angular/material/input';
 import {MatListModule} from '@angular/material/list';
-import { CoursesRoutingModule } from './courses/courses.routing.module';
+import { StudantsModule } from './studants/studants.module';
 
 @NgModule({
   declarations: [
@@ -21,15 +21,15 @@ import { CoursesRoutingModule } from './courses/courses.routing.module';
     LoginComponent
   ],
   imports: [
-    CoursesModule,
     BrowserModule,
     NoopAnimationsModule,
     MatToolbarModule,
     MatButtonModule,
     MatInputModule,
     MatListModule,
-    AppRoutingModule,
-    CoursesRoutingModule
+    CoursesModule,
+    StudantsModule,
+    AppRoutingModule
   ],
   bootstrap: [AppComponent]
 })
